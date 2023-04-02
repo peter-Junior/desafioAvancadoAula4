@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia da Gente</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header1">
+        <h2>Home</h2>
+        <h2>Cadastro<br>de Medicamentos</h2>
+        <h2>Cadastro<br>de Vacinas</h2>
+        <h2>Cadastro<br>de Cosméticos</h2>
+    </header>
+
+    <header class="header2">
+        <img src="assets/pill.svg" alt="Logo da Farmácia da Gente" width="250">
+        <div>
+            <h1>Cadastro de Medicamentos</h1>
+            <h2>Farmácia da Gente</h2>
+        </div>
+    </header>
+
+    <div class="conteiner">
+        <div class="form">
+            <form>
+                <label>Nome do Medicamento</label>
+                <input type="text" placeholder="Ex: Dorflex" id="idMed" name="med">
+
+                <label>Quantidade Disponível</label>
+                <input type="text" placeholder="Ex: 100" id="idQuant" name="quant">
+
+                <label>Classe de Medicamento</label>
+                <input type="text" placeholder="Ex: Antibiótico" id="idClasse" name="classe">
+
+                <button onclick="medicamento.cadMedi()">Cadastrar</button>
+            </form>
+        </div>
+    
+        <div class="table">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Medicamento</th>
+                    <th>Quantidade</th>
+                    <th>Classe de Medicamentos</th>
+                    <th>Remover</th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>
