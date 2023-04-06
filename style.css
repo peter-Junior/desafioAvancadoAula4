@@ -48,7 +48,7 @@ img {
     font-weight: 400;
 }
 
-.conteiner {
+.conteudo {
     display: grid;
     grid-auto-flow: column;
 }

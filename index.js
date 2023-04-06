@@ -1,5 +1,3 @@
-alert('Meu .js não está conseguindo printar as informações abaixo do <thead>')
-
 class Medicamento {
     constructor() {
         this.id = 1
@@ -18,8 +16,8 @@ class Medicamento {
         let medicamento = {}
 
         medicamento.id = this.id
-        medicamento.nomeMedicamento = document.getElementById('idMed').value,
-        medicamento.quantMedicamento = document.getElementById('idQuant').value,
+        medicamento.nomeMedicamento = document.getElementById('idMed').value
+        medicamento.quantMedicamento = document.getElementById('idQuant').value
         medicamento.classeMedicamento = document.getElementById('idClasse').value
 
         return medicamento
@@ -68,9 +66,9 @@ class Medicamento {
             tabQuant.innerText = this.arrayMedicamentos[i].quantMedicamento
             tabClasse.innerText = this.arrayMedicamentos[i].classeMedicamento
             let imagem = document.createElement('img')
-            imagem.src = 'assets/del.svg'
+            imagem.src = 'assets/del.png'
             imagem.setAttribute("onclick", "medicamento.Deletar(" + this.arrayMedicamentos[i].id + ")")
-            tabRemove.appendChild(imagem)
+            tabRemove.appendChild(imagem, innerWidth = 1)
         }
     }
 
